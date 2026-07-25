@@ -1,0 +1,168 @@
+{
+  "overall": {
+    "true_positives": 15,
+    "false_positives": 0,
+    "false_negatives": 5,
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1": 0.8571,
+    "accuracy": 0.75
+  },
+  "per_type": {
+    "ADDRESS": {
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "DATE_OF_BIRTH": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "ENROLLMENT_NUMBER": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "LOCATION": {
+      "true_positives": 3,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1": 0.75
+    },
+    "NAME": {
+      "true_positives": 2,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667
+    },
+    "ORGANIZATION": {
+      "true_positives": 8,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "true_positive_details": [
+    {
+      "ground_truth": "Nilkamal Dey Purkayastha",
+      "detected": "Nilkamal Dey Purkayastha",
+      "type": "NAME"
+    },
+    {
+      "ground_truth": "Ayan Bhattacharjee",
+      "detected": "Ayan Bhattacharjee",
+      "type": "NAME"
+    },
+    {
+      "ground_truth": "National Institute of Technology",
+      "detected": "National Institute of Technology",
+      "type": "ORGANIZATION"
+    },
+    {
+      "ground_truth": "National Informatics Centre",
+      "detected": "National Informatics Centre",
+      "type": "ORGANIZATION"
+    },
+    {
+      "ground_truth": "NIT Agartala",
+      "detected": "NIT",
+      "type": "ORGANIZATION"
+    },
+    {
+      "ground_truth": "NIT",
+      "detected": "NIT Agartala",
+      "type": "ORGANIZATION"
+    },
+    {
+      "ground_truth": "NIC",
+      "detected": "NIC",
+      "type": "ORGANIZATION"
+    },
+    {
+      "ground_truth": "NIC Tripura State",
+      "detected": "NIC Tripura State",
+      "type": "ORGANIZATION"
+    },
+    {
+      "ground_truth": "Tripura State Centre",
+      "detected": "Tripura State Centre",
+      "type": "ORGANIZATION"
+    },
+    {
+      "ground_truth": "Computer Science and Engineering",
+      "detected": "Computer Science and Engineering",
+      "type": "ORGANIZATION"
+    },
+    {
+      "ground_truth": "Tripura",
+      "detected": "WEST TRIPURA",
+      "type": "LOCATION"
+    },
+    {
+      "ground_truth": "West Tripura",
+      "detected": "Tripura",
+      "type": "LOCATION"
+    },
+    {
+      "ground_truth": "Guwahati",
+      "detected": "123 MG Road, Guwahati, Assam",
+      "type": "LOCATION"
+    },
+    {
+      "ground_truth": "23UCS089",
+      "detected": "23UCS089",
+      "type": "ENROLLMENT_NUMBER"
+    },
+    {
+      "ground_truth": "2026-07-31",
+      "detected": "2026-07-31",
+      "type": "DATE_OF_BIRTH"
+    }
+  ],
+  "false_negative_details": [
+    {
+      "text": "Ritika Raj",
+      "type": "NAME",
+      "context": "Author, appears multiple times"
+    },
+    {
+      "text": "Amit Sharma",
+      "type": "NAME",
+      "context": "Property owner in test data JSON"
+    },
+    {
+      "text": "Agartala",
+      "type": "LOCATION",
+      "context": "City name"
+    },
+    {
+      "text": "Assam",
+      "type": "LOCATION",
+      "context": "State in test data address"
+    },
+    {
+      "text": "123 MG Road, Guwahati, Assam",
+      "type": "ADDRESS",
+      "context": "Property address in test data"
+    }
+  ],
+  "false_positive_details": [],
+  "ground_truth_count": 20,
+  "detected_count": 15
+}
